@@ -21,7 +21,7 @@ public abstract class GraphqlMutation extends GraphqlRequest {
     @Override
     public String toString() {
         String superStr = super.toString();
-        return "{\"query\":\"mutation{"+superStr+"}\"}";
+        return "{\"mutation\":\"{"+superStr+"}\"}";
     }
     
 }
